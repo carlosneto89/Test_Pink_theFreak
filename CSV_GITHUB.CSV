@@ -1,0 +1,217 @@
+CALIBRATION VALUES V2.1;,;*;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*Version: 001;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*Address EPK: 0x2007C304;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*EPK:XXXX Jun 28 201717:51:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*Supplier: Crepaldi Brasil Powertrain;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*Customer: C. Neto;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*Customer number: 000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*User: No User Defined;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*Phone number: No Phone Number Defined;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*ECU:  Pentium 3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*CPU type: Retangular;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*No of interface: 1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+*Memory segments:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* Application_Code CODE INTERN 0x20000 0x1A0000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* Boot_Code CODE INTERN 0x0 0x20000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* Calibrations DATA EXTERN 0x20000000 0x80000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* ECU_Variables VARIABLES INTERN 0x40000000 0x10000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* ETK_Variables VARIABLES EXTERN 0x20080000 0x80000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION_HDR;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;MMUX;SBKP;ACIM;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;AUTOBOFF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;;TRUE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;AUTONODE_ECM;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;;TRUE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;BOFFSILENTTIME;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 5.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""ms"":";40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;C_SHTD_TIMEOUT;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 6.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""ms"":";100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;CAN_DIAG_TIMEOUT;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 6.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""ms"":";800;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EN_MSGNODE_DIAG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;TRUE;TRUE;TRUE;TRUE;FALSE;TRUE;TRUE;TRUE;TRUE;FALSE;TRUE;FALSE;FALSE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;FALSE;FALSE;FALSE;TRUE;FALSE;TRUE;TRUE;TRUE;FALSE;FALSE;FALSE;FALSE;FALSE;FALSE;FALSE;FALSE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EN_MSGPRES_DIAG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;FALSE;TRUE;TRUE;TRUE;FALSE;TRUE;TRUE;TRUE;TRUE;FALSE;TRUE;FALSE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;FALSE;TRUE;FALSE;TRUE;FALSE;TRUE;TRUE;TRUE;FALSE;FALSE;FALSE;FALSE;FALSE;FALSE;FALSE;FALSE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;EN_MSGPRES_DIAG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ENABCRCCHECK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+":""boolean"":";;0;1;0;0;0;0;0;0;0;0;1;0;1;0;1;1;0;0;1;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;SBKP;System Breakpoint Tables;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;ACIM;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ENABCRCCHECK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ENABFIXDLC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE;TRUE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ENABFIXDLC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ENABMCCHECK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+":""boolean"":";;0;1;0;0;0;0;0;0;0;0;1;0;1;0;1;1;0;0;1;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;SBKP;System Breakpoint Tables;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;ACIM;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ENABMCCHECK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ENHDCPRESMASK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;;FALSE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;FIXDLC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;IGNONENGONTHR;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 7.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""ms"":";2000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;MISSINGMSG_THR1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+":""ms"":";;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;PINK;1;1;1;1
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;MISSINGMSG_THR1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;MISSINGMSG_THR2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 5.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+":""ms"":";;300;300;300;300;300;300;300;300;300;300;300;0;1000;300;300;300;300;300;350;2100;3500;500;300;300;100;300;1000;4800;300;300;300;950;300;300;300;300
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;MISSINGMSG_THR2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;MSG_RX_EN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 2.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+":""boolean"":";;1;1;1;1;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;1;0;1;1;1;0;0;0;0;0;0;0;0
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;SBKP;System Breakpoint Tables;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;ACIM;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;MSG_RX_EN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;NODEABSENT_THR1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 5.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+":""ms"":";;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2000;2000;0;0
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;NODEABSENT_THR1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;NODEABSENT_THR2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 5.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CURVE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+":""ms"":";;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;2500;4000;4000;2500;2500
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;NODEABSENT_THR2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.1 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+X_AXIS_PTS;":"" "":";0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;TENSMAXDIAG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.2 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""Volt"":";0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;TENSMINDIAG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.2 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""Volt"":";0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;THRCNTBOFF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 5.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""adim"":";35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;TIMEOUT_ECM;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 6.0 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""ms"":";200;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;VCANRESTART;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 4.2 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""Volt"":";6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;VCANSHUTOFF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* format 7.5 calculate minimum difference/calculate automatically  fcvt with automatic switch to ecvt 17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+VALUE;":""Volt"":";5,6875;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FUNCTION;;MMUX;<void>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
